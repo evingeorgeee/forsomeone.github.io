@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="gostyles2.css">
+</head>
+<body>
+    <div class="sweater">
+        <h1>For Youu My Lovee!!(ps:sryy for latee) </h1>
+        <img src="5.jpg">
+    </div>
+
+
+    <div class="music">
+        <audio id="song">
+            <p>Your Song Name</p>
+            <source src="6.mp3" type="audio/mpeg">
+        </audio>
+        <button onclick="togglePlay()">Lets play Heather!!</button>
+
+        <script>
+        function togglePlay() {
+            const audio = document.getElementById('song');
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        }
+        </script>
+    </div>
+</body>
+</html>

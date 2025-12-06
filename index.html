@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gostyle.css">
+    <title>For you</title>
+    <script lang="JavaScript">
+        window.onload = function() {
+            var audio = document.querySelector("audio");
+            audio.play();
+        };
+    </script>
+</head>
+<body>
+    <div class="music">
+
+     <audio id="backgroundMusic" loop>
+        <source src="2.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+     </audio>
+
+     <button id="playPauseButton">Play our fav songg!!</button>
+
+     <script>
+        const backgroundMusic = document.getElementById('backgroundMusic');
+        const playPauseButton = document.getElementById('playPauseButton');
+
+        function toggleMusicPlayback() {
+            if (backgroundMusic.paused) {
+                backgroundMusic.play();
+                playPauseButton.textContent = 'Pause';
+            } else {
+                backgroundMusic.pause();
+                playPauseButton.textContent = 'Play our fav songg!!';
+            }
+        }
+
+        playPauseButton.addEventListener('click', toggleMusicPlayback);
+    </script>
+
+    </div>
+
+    <audio src="2.mp3"></audio>
+    <div class="card">
+        <div class="content">
+            <h1>Happy Aniversaryy Nuu <br>It's been 10 months rightt??</h1>
+            <img src="1.jpg" alt="us">
+            <h2>Its all been beautiful days with you and i wish us to chase all our dreams together</h2>
+            <h3>"Love Youu So Muchhnu" ~Evinuu</h3>
+            <br>
+            <br>
+            <p>waittt....whats this button??</p>&nbsp;&nbsp;
+            <button onclick="location.href='gostyles2.html'">Surprise</button>
+            
+         </div>
+    </div>
+</body>
+</html>
