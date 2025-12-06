@@ -31,7 +31,8 @@
     border-radius: 15px;
     border: 3px solid #141414;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 400px;
+    width: 180px;
+    height: 200px;
     padding: 20px;
     text-align: center;
 }
@@ -77,4 +78,5 @@
 
 .music button:active {
     background-color: #222;
+
 }
